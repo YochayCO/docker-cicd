@@ -32,7 +32,7 @@ pipelineJob('more-pipe') {
                 git {
                     remote { url(repo) }
                     branches('master')
-                    scriptPath('./basics/misc/Jenkinsfile.v2')
+                    scriptPath('./basics/jenkins/job-dsl/Jenkinsfile')
                     extensions {}
                 }
             }
