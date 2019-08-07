@@ -20,6 +20,12 @@ pipelineJob('boilerplate-pipeline') {
 }
 
 pipelineJob('more-pipe') {
+    def repo = 'https://github.com/YochayCO/docker-cicd.git'
+
+    triggers {
+        scm('H/5 * * * *')
+    }
+
     definition {
         cpsScm {
             scm {
