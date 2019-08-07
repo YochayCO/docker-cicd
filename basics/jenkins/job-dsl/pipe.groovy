@@ -17,7 +17,9 @@ pipelineJob('boilerplate-pipeline') {
             }
         }
     }
+}
 
+pipelineJob('more-pipe') {
     definition {
         cpsScm {
             scm {
