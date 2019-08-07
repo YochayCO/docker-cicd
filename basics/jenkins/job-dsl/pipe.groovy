@@ -11,7 +11,7 @@ pipelineJob('boilerplate-pipeline') {
                 git {
                     remote { url(repo) }
                     branches('master')
-                    scriptPath('misc/Jenkinsfile')
+                    scriptPath('./basics/misc/Jenkinsfile')
                     extensions {}
                     // git('https://github.com/YochayCO/docker-cicd.git')
                     // script(readFileFromWorkspace('./basics/misc/Jenkinsfile'))
