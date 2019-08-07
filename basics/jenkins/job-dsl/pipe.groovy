@@ -7,14 +7,12 @@ pipelineJob('boilerplate-pipeline') {
 
     definition {
         cpsScm {
-            cps {
+            scm {
                 git {
                     remote { url(repo) }
                     branches('master')
                     scriptPath('./basics/misc/Jenkinsfile')
                     extensions {}
-                    // git('https://github.com/YochayCO/docker-cicd.git')
-                    // script(readFileFromWorkspace('./basics/misc/Jenkinsfile'))
                 }
             }
         }
