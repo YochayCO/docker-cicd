@@ -20,8 +20,8 @@ node {
      sh label: '', script: '''
       docker run --rm -tid --name docker_test -p 3000 yochayrusty/basics:latest
       docker kill docker_test
-      
       '''
-     }
+     sh 'curl -i http://localhost:3000/'
+    }
    }
 
